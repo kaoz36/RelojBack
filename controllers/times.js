@@ -20,9 +20,7 @@ function getTimes (req, res) {
  * @param {default params} req 
  * @param {default params} res 
  */
-function saveTime (req, res) {
-    console.log(req.body);
-    
+function saveTime (req, res) {    
     let time = new Time()
     time.hour = req.body.hour
     time.minute = req.body.minute

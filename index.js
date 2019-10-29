@@ -8,10 +8,9 @@ mongoose.connect(config.db, (err, res) => {
     if ( err ) {
         return err
     }
-    console.log('Conexion a mongo');
 
     app.listen(config.port, () => {
-        console.log(`Inicializa http://localhost:${config.port}`)
+        console.log(`Start http://localhost:${config.port}`)
     })
 
 })
